@@ -8,6 +8,9 @@ namespace WpfAppEsercizietto
 {
     public class Cliente
     {
+        
+        // Commento aggiunto da github
+
         string nome, cognome, cod_Fis;
 
         public string Nome { get {  return nome; } set { nome = value; } }
