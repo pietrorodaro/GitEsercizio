@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button x:Name="btn_Prenota" Content="Prenota" HorizontalAlignment="Center" Margin="0,303,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.222,0.475" Height="56" Width="200" Click="btn_Prenota_Click"/>
+        <TextBox x:Name="txtBox_Nome" HorizontalAlignment="Left" Margin="82,72,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Width="120" Height="40"/>
+        <TextBox x:Name="txtBox_Cognome" HorizontalAlignment="Left" Margin="82,146,0,0" TextWrapping="Wrap" Text="Cognome" VerticalAlignment="Top" Width="120" Height="36"/>
+        <TextBox x:Name="txtBox_CodFis" HorizontalAlignment="Left" Margin="82,204,0,0" TextWrapping="Wrap" Text="Cod Fis" VerticalAlignment="Top" Width="120" Height="40"/>
+        <TextBox x:Name="txtBox_Civico" HorizontalAlignment="Left" Margin="495,60,0,0" TextWrapping="Wrap" Text="Civico" VerticalAlignment="Top" Width="190" Height="69" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="txtBox_Tipo" HorizontalAlignment="Left" Margin="495,164,0,0" TextWrapping="Wrap" Text="Tipo" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.511,-0.558" Height="80"/>
 
     </Grid>
 </Window>

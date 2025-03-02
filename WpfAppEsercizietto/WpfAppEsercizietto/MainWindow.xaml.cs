@@ -21,19 +21,19 @@ namespace WpfAppEsercizietto
             InitializeComponent();
         }
 
-        public List<Cliente> clienti;
+        public List<Cliente> clienti = new List<Cliente>();
         public List<Appartamento> appartamenti;
 
         private void btn_Prenota_Click(object sender, RoutedEventArgs e)
         {
-            int cod_Fis = int.Parse(txtBox_Nome.Text);
+            string cod_Fis = txtBox_Nome.Text;
             string nome = txtBox_Nome.Text;
             string cognome = txtBox_Cognome.Text;
 
             Cliente c = new Cliente(nome, cognome, cod_Fis);
             clienti.Add(c);
 
-            MessageBox.Show($"Cliente Aggiunto con successo! \n{c}");
+            MessageBox.Show($"Cliente Aggiunto con successo! ");
         }
 
 
